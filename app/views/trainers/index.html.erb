@@ -1,0 +1,50 @@
+
+<% provide(:title, "The table of all trainers:") %>
+
+<h1> The table of all Trainers</h1>
+
+
+<table>
+  <thead>
+	  <tr>
+	    <th>Name</th>
+	    <th>Age</th>
+	    <th>Height</th>
+	    <th>Weight</th>
+	    <th>Level</th>
+	    <th>Address</th>
+	    <th>Email</th>
+	    <th></th>
+	    <th></th>
+	    <th></th>
+	  </tr>
+  </thead>
+
+  <tbody>
+ 	 <%@trainers.each do |trainer| %>
+  	<tr>
+		<td><%= trainer.name %></td>
+		<td><%= trainer.age %></td>
+		<td><%= trainer.height %></td>
+		<td><%= trainer.weight %></td>
+		<td><%= trainer.level %></td>
+		<td><%= trainer.address %></td>
+		<td><%= trainer.email %></td>
+		<td><%= link_to 'Show', trainer%></td>
+		<td><%= link_to 'Edit', edit_trainer_path(trainer) %></td>
+		<td><%= link_to 'Destroy', trainer, method: :delete, data: { confirm: 'Do you want to delete the information?' } %></td>
+  	 </tr>
+ 	<% end -%>
+ 	</tbody>
+</table>
+
+<br>
+<%= link_to 'Create new trainer', new_trainer_path %>
+
+
+
+
+
+
+
+

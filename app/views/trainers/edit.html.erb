@@ -1,0 +1,73 @@
+<div class="container">
+
+<h1>Editing trainer</h1>
+
+<%= form_for(@trainer) do |trainer| %>
+  <% if @trainer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@trainer.errors.count, "error") %> prohibited this trainer from being saved:</h2>
+
+      <ul>
+      <% @trainer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= trainer.label :name %><br>
+    <%= trainer.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= trainer.label :age %><br>
+    <%= trainer.text_area :age %>
+  </div>
+
+  <div class="field">
+    <%= trainer.label :height %><br>
+    <%= trainer.text_field :height %>
+  </div>
+
+  <div class="field">
+    <%= trainer.label :weight %><br>
+    <%= trainer.text_field :weight %>
+  </div>
+
+  <div class="field">
+    <%= trainer.label :level %><br>
+    <%= trainer.text_field :level %>
+  </div>
+
+  <div class="field">
+    <%= trainer.label :address %><br>
+    <%= trainer.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= trainer.label :email %><br>
+    <%= trainer.email_field :email %>
+  </div>
+  <br>
+  <div class="actions">
+    <%= trainer.submit %>
+  </div>
+
+<% end %>
+
+<br>
+<%= link_to 'Show', @trainer %> |
+<%= link_to 'Back', trainers_path %>
+
+</div>
+
+
+
+
+
+
+
+
+
+

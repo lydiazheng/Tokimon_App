@@ -1,0 +1,47 @@
+
+<% provide(:title, "The table of all tokimons:") %>
+
+<h1> The table of all Tokimons</h1>
+
+
+<table>
+  <thead>
+	  <tr>
+	    <th>Name</th>
+	    <th>Weight</th>
+	    <th>Height</th>
+	    <th>Fly</th>
+	    <th>Fight</th>
+	    <th>Fire</th>
+	    <th>Water</th>
+	    <th>Electric</th>
+	    <th>Ice</th>
+	    <th></th>
+	    <th></th>
+	    <th></th>
+	  </tr>
+  </thead>
+
+  <tbody>
+ 	 <% @tokimons.each do |tokimon| %>
+  	<tr>
+		<td><%= tokimon.name %></td>
+		<td><%= tokimon.weight %></td>
+		<td><%= tokimon.height %></td>
+		<td><%= tokimon.fly %></td>
+		<td><%= tokimon.fight %></td>
+		<td><%= tokimon.fire %></td>
+		<td><%= tokimon.water %></td>
+		<td><%= tokimon.electric %></td>
+		<td><%= tokimon.ice %></td>
+		<td><%= link_to 'Show', tokimon%></td>
+		<td><%= link_to 'Edit', edit_tokimon_path(tokimon) %></td>
+		<td><%= link_to 'Destroy', tokimon, method: :delete, data: { confirm: 'Do you want to delete the information?' } %></td>
+  	 </tr>
+ 	<% end -%>
+ 	</tbody>
+</table>
+
+<br>
+<%= link_to 'Create new tokimon', new_tokimon_path %>
+

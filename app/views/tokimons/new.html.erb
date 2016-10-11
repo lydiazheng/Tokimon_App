@@ -1,0 +1,38 @@
+<% provide(:title, 'Enter tokimons info') %>
+<h1>Input your tokimon's information</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@tokimon) do |t| %>
+
+      <%= t.label :name %>
+      <%= t.text_field :name, class: 'form-control'%>
+
+	    <%= t.label :weight %>
+      <%= t.text_field :weight, class: 'form-control'%>
+
+      <%= t.label :height %>
+      <%= t.text_field :height, class: 'form-control'%>
+
+      <%= t.label :fly %>
+      <%= t.text_field :fly, class: 'form-control'%>
+
+      <%= t.label :fight %>
+      <%= t.text_field :fight, class: 'form-control'%>
+
+      <%= t.label :fire %>
+      <%= t.text_field :fire, class: 'form-control'%>
+
+      <%= t.label :water %>
+      <%= t.text_field :water, class: 'form-control'%>
+
+      <%= t.label :electric %>
+      <%= t.text_field :electric, class: 'form-control'%>
+
+      <%= t.label :ice %>
+      <%= t.text_field :ice, class: 'form-control'%>
+      <br>
+      <%= t.submit "Create my tokimon", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,84 @@
+<div class="container">
+
+<h1>Editing tokimons</h1>
+
+<%= form_for(@tokimon) do |tokimon| %>
+  <% if @tokimon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tokimon.errors.count, "error") %> prohibited this tokimon from being saved:</h2>
+
+      <ul>
+      <% @tokimon.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= tokimon.label :name %><br>
+    <%= tokimon.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= tokimon.label :weight %><br>
+    <%= tokimon.text_area :weight %>
+  </div>
+
+  <div class="field">
+    <%= tokimon.label :height %><br>
+    <%= tokimon.text_field :height %>
+  </div>
+
+  <div class="field">
+    <%= tokimon.label :fly %><br>
+    <%= tokimon.text_field :fly %>
+  </div>
+
+  <div class="field">
+    <%= tokimon.label :fight %><br>
+    <%= tokimon.text_field :fight %>
+  </div>
+
+  <div class="field">
+    <%= tokimon.label :fire %><br>
+    <%= tokimon.text_field :fire %>
+  </div>
+
+  <div class="field">
+    <%= tokimon.label :water %><br>
+    <%= tokimon.text_field :water %>
+  </div>
+
+  <div class="field">
+    <%= tokimon.label :electric %><br>
+    <%= tokimon.text_field :electric %>
+  </div>
+
+  <div class="field">
+    <%= tokimon.label :ice %><br>
+    <%= tokimon.text_field :ice %>
+  </div>
+
+  <br>
+  <div class="actions">
+    <%= tokimon.submit %>
+  </div>
+
+<% end %>
+
+<br>
+<%= link_to 'Show', @tokimon %> |
+<%= link_to 'Back', tokimons_path %>
+
+</div>
+
+
+
+
+
+
+
+
+
+
