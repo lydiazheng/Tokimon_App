@@ -59,15 +59,23 @@
     <%= tokimon.label :ice %><br>
     <%= tokimon.text_field :ice %>
   </div>
+  <br>
 
+  <p>Choose it's trainer</p>
+  <select name="tokimon[trainer_id]">
+    <% Trainer.all.each do |trainer| %>
+        <option value="<%= trainer.id %>"><%= trainer.name %></option>
+   <% end %>
+  </select>
+  <br>
   <br>
   <div class="actions">
     <%= tokimon.submit %>
   </div>
-
+  <br>
 <% end %>
 
-<br>
+
 <%= link_to 'Show', @tokimon %> |
 <%= link_to 'Back', trainers_path %>
 

@@ -7,6 +7,8 @@ class TrainersController < ApplicationController
   def show
     @trainer = Trainer.find(params[:id])
     @tokimons = @trainer.tokimons.all
+    @count = @trainer.tokimons.count / 3
+    @trainer.update_attribute(:level, @count)
   end
 
 
@@ -53,7 +55,7 @@ class TrainersController < ApplicationController
   private
     def trainer_params
       params.require(:trainer).permit(:name, :email, :age, 
-        :height, :weight, :level, :address)
+        :height, :weight,:address)
     end
 
 

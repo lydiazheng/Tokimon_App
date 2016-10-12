@@ -7,6 +7,10 @@
     <th>Name:</th>
     <td><%= @trainer.name %></td>
   </tr>
+  <tr>
+    <th>Level (>=0):</th>
+    <td><%= @trainer.level = @count %></td>
+  </tr>
 
   <tr>
     <th>Age:</th>
@@ -23,10 +27,6 @@
     <td><%= @trainer.weight %></td>
   </tr>
 
-  <tr>
-    <th>Level:</th>
-    <td><%= @trainer.level %></td>
-  </tr>
 
   <tr>
     <th>Address:</th>
@@ -46,10 +46,9 @@
 <br>
 <br>
 <div >
- 
+ <%= link_to 'Create Your Tokimon', new_tokimon_path %> 
   <% if @trainer.tokimons.any? %>
       <h3>tokimons (<%= @trainer.tokimons.count %>)</h3>
-      <br>
       <ol class="tokimons" >
         <%= render 'tokimons/tokimon'%>
       </ol>
@@ -57,11 +56,9 @@
     <% end %>
 </div>
 
-<%= link_to 'Create Your Tokimon', new_tokimon_path %> 
-
 </div>
 
-
+    
 
 
 

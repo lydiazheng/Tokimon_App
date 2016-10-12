@@ -4,7 +4,6 @@ class Trainer < ApplicationRecord
 	validates :age, presence:true, length: {maximum: 3}
 	validates :height, presence:true, length: {maximum: 3}
 	validates :weight, presence:true, length: {maximum: 3}
-	validates :level, presence:true, length: {maximum: 10}
 	validates :address, presence:true, length: {maximum: 50}
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
 	validates :email, presence: true, length: { maximum: 50 }, format: { with: VALID_EMAIL_REGEX },

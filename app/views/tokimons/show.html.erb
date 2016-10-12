@@ -47,13 +47,20 @@
     <th>Ice:</th>
     <td><%= @tokimon.ice %></td>
   </tr>
+
+  <tr>
+    <th>Total:</th>
+    <td><%= @tokimon.total %></td>
+  </tr>
+  
 </table>
 
 
 <%= link_to 'Edit', edit_tokimon_path(@tokimon) %> |
-<%= link_to 'Back', tokimons_path %>
+<%= link_to 'Back', trainers_path %>
 
 </div>
+
 
 
 

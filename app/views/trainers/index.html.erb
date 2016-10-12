@@ -40,9 +40,9 @@
 
 <br>
 <%= link_to 'Create new Trainer', new_trainer_path %>
-
-
-
+<br>
+<br>
+<%= bar_chart Trainer.group(:name).sum(:level), colors: ["#DB7093"] , ytitle: "Trainer Name", xtitle: "Trainer Level", stacked: true, discrete: true%>
 
 
 
