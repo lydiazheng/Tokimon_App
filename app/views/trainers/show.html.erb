@@ -2,7 +2,7 @@
 
 <p id="notice"><%= notice %></p>
 
-<table>
+<table align="center">
   <tr>
     <th>Name:</th>
     <td><%= @trainer.name %></td>
@@ -38,22 +38,26 @@
     <td><%= @trainer.email %></td>
   </tr>
 </table>
-<br>
 
+
+<%= link_to 'Edit', edit_trainer_path(@trainer) %> |
+<%= link_to 'Back', trainers_path %>
+
+<br>
+<br>
 <div >
  
   <% if @trainer.tokimons.any? %>
       <h3>tokimons (<%= @trainer.tokimons.count %>)</h3>
-      <ol class="tokimons">
-        <%= render 'tokimons/tokimon' %>
+      <br>
+      <ol class="tokimons" >
+        <%= render 'tokimons/tokimon'%>
       </ol>
       
     <% end %>
 </div>
 
-<%= link_to 'Create Your Tokimon', new_tokimon_path %> |
-<%= link_to 'Edit', edit_trainer_path(@trainer) %> |
-<%= link_to 'Back', trainers_path %>
+<%= link_to 'Create Your Tokimon', new_tokimon_path %> 
 
 </div>
 

@@ -2,50 +2,53 @@
 
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @tokimon.name %>
-</p>
+<table align="center">
+  <tr>
+    <th>Name:</th>
+    <td><%= @tokimon.name %></td>
+  </tr>
 
-<p>
-  <strong>Weight:</strong>
-  <%= @tokimon.weight %>
-</p>
+  <tr>
+    <th>Weight:</th>
+    <td><%= @tokimon.weight %></td>
+  </tr>
 
-<p>
-  <strong>Height:</strong>
-  <%= @tokimon.height %>
-</p>
+  <tr>
+    <th>Height:</th>
+    <td><%= @tokimon.height %></td>
+  </tr>
 
-<p>
-  <strong>Fly:</strong>
-  <%= @tokimon.fly %>
-</p>
+  <tr>
+    <th>Fly:</th>
+    <td><%= @tokimon.fly %></td>
+  </tr>
 
-<p>
-  <strong>Fight:</strong>
-  <%= @tokimon.fight %>
-</p>
+  <tr>
+    <th>Fight:</th>
+    <td><%= @tokimon.fight %></td>
+  </tr>
 
-<p>
-  <strong>Fire:</strong>
-  <%= @tokimon.fire %>
-</p>
+  <tr>
+    <th>Fire:</th>
+    <td><%= @tokimon.fire %></td>
+  </tr>
 
-<p>
-  <strong>Water:</strong>
-  <%= @tokimon.water %>
-</p>
+  <tr>
+    <th>Water:</th>
+    <td><%= @tokimon.water %></td>
+  </tr>
 
-<p>
-  <strong>Electric:</strong>
-  <%= @tokimon.electric %>
-</p>
+  <tr>
+    <th>Electric:</th>
+    <td><%= @tokimon.electric %></td>
+  </tr>
 
-<p>
-  <strong>Ice:</strong>
-  <%= @tokimon.ice %>
-</p>
+  <tr>
+    <th>Ice:</th>
+    <td><%= @tokimon.ice %></td>
+  </tr>
+</table>
+
 
 <%= link_to 'Edit', edit_tokimon_path(@tokimon) %> |
 <%= link_to 'Back', tokimons_path %>

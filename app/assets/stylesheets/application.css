@@ -53,18 +53,73 @@ a:active{
 	text-decoration: underline;
 }
 
+body{
+	padding-left: 55px;
+	padding-right: 55px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+}
+
+h1{
+	text-align: center;
+	font-size:30px;
+	font-weight: solid;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FA8072;
+}
+
+h3{
+	text-align: center;
+	font-size:15px;
+	font-weight: lighter;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FA8072;
+}
+
+table, tr, td {
+	border:2px solid;
+	border-color: rgb(204,208,211);
+	border-collapse: collapse;
+	table-layout: fixed;
+
+}
+
+th {
+	text-align: left;
+	border:2px solid;
+	border-color: rgb(204,208,211);
+	background-color: rgb(221,221,221);
+	font-family: "Times New Roman", Times, serif;
+	padding: 5px;
+	width: 100px;
+	}
+
+td{
+	font-weight: normal;
+	text-align: center;
+	width: 100px;
+	background:#FFE4E1;
+}
+
+tbody{
+	background:	#F0F8FF;
+}
 
 
+div{
+	text-align: center;
+	font-weight: normal;
+	background: #FFEBEB;
+}
 
-
-
-
-
-
-
-
-
-
+p{
+	font-size: 15px;
+	font-weight: lighter;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
 
 .app_body{
 	background: url("http://www.walldevil.com/wallpapers/a81/pokemon-bulbasaur-squirtle-charmander.jpg");

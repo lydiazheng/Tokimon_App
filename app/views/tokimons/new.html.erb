@@ -5,34 +5,50 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@tokimon) do |t| %>
-
-      <%= t.label :name %>
+      <div>
+      <%= t.label :name %><br>
       <%= t.text_field :name, class: 'form-control'%>
+      </div>
 
-	    <%= t.label :weight %>
+      <div>
+	    <%= t.label :weight %><br>
       <%= t.text_field :weight, class: 'form-control'%>
+      </div>
 
-      <%= t.label :height %>
+      <div>
+      <%= t.label :height %><br>
       <%= t.text_field :height, class: 'form-control'%>
+      </div>
 
-      <%= t.label :fly %>
+      <div>
+      <%= t.label :fly %><br>
       <%= t.text_field :fly, class: 'form-control'%>
+      </div>
 
-      <%= t.label :fight %>
+      <div>
+      <%= t.label :fight %><br>
       <%= t.text_field :fight, class: 'form-control'%>
+      </div>
 
-      <%= t.label :fire %>
+      <div>
+      <%= t.label :fire %><br>
       <%= t.text_field :fire, class: 'form-control'%>
+      </div>
 
-      <%= t.label :water %>
+      <div>
+      <%= t.label :water %><br>
       <%= t.text_field :water, class: 'form-control'%>
+      </div>
 
-      <%= t.label :electric %>
+      <div>
+      <%= t.label :electric %><br>
       <%= t.text_field :electric, class: 'form-control'%>
+      </div>
 
-      <%= t.label :ice %>
+      <div>
+      <%= t.label :ice %><br>
       <%= t.text_field :ice, class: 'form-control'%>
-
+      </div>
 
       <br>
       <p>Choose it's trainer</p>
@@ -43,7 +59,17 @@
         <% end %>
       </select>
       <br>
+      <br>
       <%= t.submit "Create my tokimon", class: "btn btn-primary" %>
     <% end %>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
