@@ -12,9 +12,8 @@ class CreateTokimons < ActiveRecord::Migration[5.0]
       t.integer :electric
       t.integer :ice
 
-
-      t.references :trainer, foreign_key: true
       t.timestamps
     end
+
   end
 end

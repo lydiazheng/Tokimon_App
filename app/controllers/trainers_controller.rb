@@ -6,6 +6,7 @@ class TrainersController < ApplicationController
 
   def show
     @trainer = Trainer.find(params[:id])
+    @tokimons = @trainer.tokimons.all
   end
 
 
@@ -18,7 +19,7 @@ class TrainersController < ApplicationController
     @trainer = Trainer.new(trainer_params)
     if @trainer.save
       flash[:info] = "Create successfully! Congratulation"
-      redirect_to root_url
+      redirect_to @trainer
     else
       render 'new'
     end
@@ -42,7 +43,7 @@ class TrainersController < ApplicationController
   end
 
 
-  def destory
+  def destroy
     Trainer.find(params[:id]).destroy
     flash[:success] = "Delete successfully! Congratulation!"
     redirect_to trainers_url
@@ -52,7 +53,7 @@ class TrainersController < ApplicationController
   private
     def trainer_params
       params.require(:trainer).permit(:name, :email, :age, 
-        :height, :weight, :level, :address, :address)
+        :height, :weight, :level, :address)
     end
 
 

@@ -6,9 +6,21 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <table class = "one", style="width:100%">
+		<tr class="one">
+			<th class="one"><%= link_to 'Trainers', trainers_path %></th>
+			<th class="one"><%= link_to 'Tokimons', tokimons_path %></th>
+		</tr>
+	</table>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class = "app_body" >
+    <div >
+      <% flash.each do |message_type, message| %>
+        <div ><%= message %></div>
+      <% end %>
+      <%= yield %>
+    </div>
   </body>
 </html>

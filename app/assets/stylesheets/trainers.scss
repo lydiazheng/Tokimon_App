@@ -16,42 +16,41 @@ h1{
 	font-weight: solid;
 	font-style: normal;
 	font-family: Arial, Helvetica, sans-serif;
-	color: blue;
+	color: #FA8072;
 }
-
+tokimons{
+	table-layout: fixed;
+	padding: 5px;
+}
 table, tr, td {
 	border:2px solid;
 	border-color: rgb(204,208,211);
 	border-collapse: collapse;
 	table-layout: fixed;
+	text-align: center;
+	padding: 5px;
 }
 
+
 th {
-	text-align: left;
 	border:2px solid;
 	border-color: rgb(204,208,211);
 	background-color: rgb(221,221,221);
 	font-family: "Times New Roman", Times, serif;
 	padding: 5px;
-	width: 100px;
+	text-align: center;
 	}
 
 td{
 	font-weight: normal;
-	text-align: left;
-	padding-left: 5px;
-	padding-right: 75px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	text-align: center;
+	background:#FFE4E1;
 	width: 100px;
 }
 
 tbody{
 	background:	#F0F8FF;
 }
-
-
-
 
 div{
 	text-align: center;
@@ -64,6 +63,10 @@ p{
 	font-weight: normal;
 }
 
-
+div.field{
+	font-family: "Times New Roman", Times, serif;
+	padding: 5px;
+	text-align: center;
+}
 
 

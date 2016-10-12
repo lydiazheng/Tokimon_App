@@ -1,6 +1,7 @@
 <% provide(:title, 'Enter tokimons info') %>
 <h1>Input your tokimon's information</h1>
 
+
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@tokimon) do |t| %>
@@ -31,6 +32,16 @@
 
       <%= t.label :ice %>
       <%= t.text_field :ice, class: 'form-control'%>
+
+
+      <br>
+      <p>Choose it's trainer</p>
+      
+      <select name="tokimon[trainer_id]">
+        <% Trainer.all.each do |trainer| %>
+          <option value="<%= trainer.id %>"><%= trainer.name %></option>
+        <% end %>
+      </select>
       <br>
       <%= t.submit "Create my tokimon", class: "btn btn-primary" %>
     <% end %>

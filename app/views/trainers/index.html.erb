@@ -32,14 +32,14 @@
 		<td><%= trainer.email %></td>
 		<td><%= link_to 'Show', trainer%></td>
 		<td><%= link_to 'Edit', edit_trainer_path(trainer) %></td>
-		<td><%= link_to 'Destroy', trainer, method: :delete, data: { confirm: 'Do you want to delete the information?' } %></td>
+		<td><%= link_to 'Destroy', trainer, method: :delete, data: { confirm: 'Do you want to delete the trainer?' } %></td>
   	 </tr>
  	<% end -%>
  	</tbody>
 </table>
 
 <br>
-<%= link_to 'Create new trainer', new_trainer_path %>
+<%= link_to 'Create new Trainer', new_trainer_path %>
 
 
 

@@ -42,7 +42,7 @@ class TokimonsController < ApplicationController
   end
 
 
-  def destory
+  def destroy
     Tokimon.find(params[:id]).destroy
     flash[:success] = "Delete successfully! Congratulation!"
     redirect_to tokimons_url
@@ -52,7 +52,7 @@ class TokimonsController < ApplicationController
   private
     def tokimon_params
       params.require(:tokimon).permit(:name, :fly, :fight, :fire, :water, :electric, :ice,
-        :height, :weight)
+        :height, :weight, :trainer_id)
     end
 
 
