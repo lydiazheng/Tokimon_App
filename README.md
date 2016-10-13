@@ -2,12 +2,12 @@
 
 # Features:
 ## 1.Attributes for the trainers:
- -age: You should enter the trainer's name, but the length is less than 50 characters
- -height: Measured in cm, with maximum 3 number limit
- -weight: Measured in Pounds, with maximum 3 number limit
- -level: The level of the trainer is based on the number of tokimons he/she has - every three get a level up
- -address
- -email: The email which the trainer input should be in the correct email format. Such as  xxxx@xxx.xxx
+``` -age: You should enter the trainer's name, but the length is less than 50 characters ``
+``` -height: Measured in cm, with maximum 3 number limit ``
+``` -weight: Measured in Pounds, with maximum 3 number limit
+``` -level: The level of the trainer is based on the number of tokimons he/she has - every three get a level up``
+``` -address``
+``` -email: The email which the trainer input should be in the correct email format. Such as  xxxx@xxx.xxx``
 
 ## 2.Attributes for the tokimons
  -weight: Measured in Pounds, with maximum 3 number limit
