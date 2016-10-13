@@ -38,7 +38,7 @@
 	</tbody>
 </table>
 <br>
-
+<p>The bar chart of all Tokimons</p>
 <%= bar_chart Tokimon.group(:name).sum(:total), colors: ["#DB7093"] , ytitle: "Tokimon Name", xtitle: "Total Value"%>
 
 

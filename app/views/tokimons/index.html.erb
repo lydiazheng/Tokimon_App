@@ -1,7 +1,7 @@
 
 <% provide(:title, "The table of all tokimons:") %>
 
-<h1> The table of all Tokimons</h1>
+<h2> The table of all Tokimons</h2>
 
 
 <table>
@@ -48,4 +48,5 @@
 <%= link_to 'Create new Tokimon', new_tokimon_path %>
 <br>
 <br>
+<p>The bar chart of all Tokimons</p>
 <%= bar_chart Tokimon.group(:name).sum(:total), colors: ["#DB7093"] , ytitle: "Tokimon Name", xtitle: "Total Value"%>
