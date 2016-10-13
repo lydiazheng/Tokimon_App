@@ -9,13 +9,13 @@
 ###### -address
 ###### -email: The email which the trainer input should be in the correct email format. Such as  xxxx@xxx.xxx
 
-## 2.Attributes for the tokimons
+## 2.Attributes for the tokimons:
 ###### -weight: Measured in Pounds, with maximum 3 number limit
 ###### -height: Measured in cm, with maximum 3 number limit
 ###### -Fly,Fight,Fire,Water,Electric,Ice : The ability of the tokimons, with an integer between 0 and 100
 ###### -total: The sum of the abilities of the tokiomon
 
-## 3.Bar char
+## 3.Bar chart
 ###### -For displaying the data clearly, I add a bar chart for the trainer's level
 ######                                  and add a bar chart for all tokimons' total ability
 
