@@ -46,9 +46,10 @@ class TokimonsController < ApplicationController
 
 
   def destroy
+    @trainer = Trainer.find(Tokimon.find(params[:id]).trainer_id)
     Tokimon.find(params[:id]).destroy
     flash[:success] = "Delete successfully! Congratulation!"
-    redirect_to tokimons_url
+    redirect_to @trainer
   end
 
 

@@ -10,13 +10,14 @@
     <table class = "one", style="width:100%">
 		<tr class="one">
 			<th class="one"><%= link_to 'Trainers', trainers_path %></th>
+      <th class="one"><%= link_to 'HOME', root_url %></th>
 			<th class="one"><%= link_to 'Tokimons', tokimons_path %></th>
 		</tr>
 	</table>
   </head>
 
   <body class = "app_body" >
-    <div >
+    <div class="app_div">
       <% flash.each do |message_type, message| %>
         <div ><%= message %></div>
       <% end %>

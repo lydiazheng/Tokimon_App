@@ -1,6 +1,6 @@
 class Trainer < ApplicationRecord
-	has_many :tokimons
-	validates :name, presence:true, length: { maximum: 10}
+	has_many :tokimons, :dependent => :destroy
+	validates :name, presence:true, length: { maximum: 50}
 	validates :age, presence:true, length: {maximum: 3}
 	validates :height, presence:true, length: {maximum: 3}
 	validates :weight, presence:true, length: {maximum: 3}

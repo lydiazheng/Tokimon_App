@@ -26,8 +26,10 @@ table.one,th.one,tr.one{
 }
 
 a{
+	text-align: center;
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	background-color: 
+	text-shadow: 2px 2px #F0F0F0 ;
+	
 }
 
 a:link{
@@ -61,6 +63,25 @@ body{
 	padding-bottom: 25px;
 
 }
+
+.home{
+	-webkit-animation:mymove 5s infinite;
+	animation: mymove 5s infinite;
+	position: relative;
+	-webkit-animation-timing-function:ease-in-out;
+
+}
+
+@-webkit-keyframes mymove{
+	from{left: 0px;}
+	to{left: 450px;}
+}
+
+@keyframes mymove{
+	from{left: 0px;}
+	to{left: 450px;}
+}
+
 
 h1{
 	text-align: center;
@@ -115,7 +136,7 @@ tbody{
 }
 
 
-div{
+.app_div{
 	text-align: center;
 	font-weight: normal;
 	background: #FFEBEB;
@@ -130,7 +151,7 @@ p{
 .app_body{
 	background: url("http://www.walldevil.com/wallpapers/a81/pokemon-bulbasaur-squirtle-charmander.jpg");
 	background-size: 1500px 1000px;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 
 }
 
