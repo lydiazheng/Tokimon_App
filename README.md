@@ -1,5 +1,5 @@
 #### README
-
+#### The link of  MI Mockup : https://github.com/lydiazheng/276_assign2/blob/master/cmpt276-A2%20UI%20Mockup.pdf
 # Features:
 ## 1.Attributes for the trainers:
 ###### -age: You should enter the trainer's name, but the length is less than 50 characters 
