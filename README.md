@@ -22,4 +22,6 @@
 ## 4.Message prompt
 ###### -When you create, edit, or delete a trainer or tokimon, a message will pop up on the website.
 
+## 5.Animation
+###### -Home page has an animation with the link.
 ###### Lydia Zheng
