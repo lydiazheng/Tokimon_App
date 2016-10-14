@@ -25,8 +25,6 @@ class TrainersController < ApplicationController
     else
       render 'new'
     end
-     @count = @trainer.tokimons.count / 3
-     @trainer.update_attribute(:level, @count)
   end
 
 
