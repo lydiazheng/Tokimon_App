@@ -14,7 +14,7 @@
  *= require_self
 
  */
-table.one,th.one,tr.one{
+.one,.one,.one{
 	background-color: #FFEFD5;
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
