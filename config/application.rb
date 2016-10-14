@@ -1,5 +1,6 @@
 require_relative 'boot'
-
+# config/application.rb
+config.assets.initialize_on_precompile = false
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
