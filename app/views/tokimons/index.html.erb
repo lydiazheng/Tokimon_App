@@ -19,6 +19,7 @@
 	    <th>Total</th>
 	    <th></th>
 	    <th></th>
+	    <th></th>
 	  </tr>
   </thead>
 
@@ -37,6 +38,7 @@
 		<td><%= tokimon.fire + tokimon.fight + tokimon.fire + tokimon.water + tokimon.electric + tokimon.ice %></td>
 		<td><%= link_to 'Show', tokimon%></td>
 		<td><%= link_to 'Edit', edit_tokimon_path(tokimon) %></td>
+		<td><%= link_to 'Destroy',tokimon, method: :delete, data: { confirm: 'Do you want to delete the tokimon?' } %></td>
   	 </tr>
  	<% end -%>
  	</tbody>
