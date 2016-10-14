@@ -65,7 +65,7 @@ a:active{
 
 
 
-.home{
+img.home{
 	-webkit-animation:mymove 5s infinite;
 	animation: mymove 5s infinite;
 	position: relative;
