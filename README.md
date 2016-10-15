@@ -21,6 +21,7 @@
 
 ## 4.Message prompt
 ###### -When you create, edit, or delete a trainer or tokimon, a message will pop up on the website.
+###### -If the value of the anility is out of the range (0,100), a error message will pop up.
 
 ## 5.Animation
 ###### -Home page has an animation with the link.
