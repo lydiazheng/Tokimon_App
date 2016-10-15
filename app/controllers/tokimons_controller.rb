@@ -20,9 +20,10 @@ class TokimonsController < ApplicationController
     #####
     @trainer = Trainer.find(@tokimon.trainer_id)
     #####
+   
     if @tokimon.save
       @tokimon.total  = @tokimon.fire + @tokimon.fight + @tokimon.fly + @tokimon.water + @tokimon.electric + @tokimon.ice
-      flash[:info] = "Create successfully! Congratulation"
+      @tokimon.update_attribute(:total, @tokimon.total)
       redirect_to @tokimon
     else
       render 'new'
@@ -31,6 +32,7 @@ class TokimonsController < ApplicationController
 
 
   def edit
+
     @tokimon = Tokimon.find(params[:id])
   end
 
@@ -39,6 +41,8 @@ class TokimonsController < ApplicationController
     @tokimon = Tokimon.find(params[:id])
     if @tokimon.update_attributes(tokimon_params)
       flash[:success] = "Update successfully! Congratulation!"
+      @tokimon.total  = @tokimon.fire + @tokimon.fight + @tokimon.fly + @tokimon.water + @tokimon.electric + @tokimon.ice
+      @tokimon.update_attribute(:total, @tokimon.total)
       redirect_to @tokimon
       #Handle a successful update.
     else
