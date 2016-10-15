@@ -20,8 +20,9 @@ class TokimonsController < ApplicationController
     #####
     @trainer = Trainer.find(@tokimon.trainer_id)
     #####
-    @tokimon.total  = @tokimon.fire + @tokimon.fight + @tokimon.fly + @tokimon.water + @tokimon.electric + @tokimon.ice
+
     if @tokimon.save
+      @tokimon.total  = @tokimon.fire + @tokimon.fight + @tokimon.fly + @tokimon.water + @tokimon.electric + @tokimon.ice
       flash[:info] = "Create successfully! Congratulation"
       redirect_to @tokimon
     else

@@ -2,53 +2,52 @@
 <h1>Input your tokimon's information</h1>
 
 
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
+<div>
+  <div>
     <%= form_for(@tokimon) do |t| %>
       <div>
       <%= t.label :name %><br>
-      <%= t.text_field :name, class: 'form-control'%>
+      <%= t.text_field :name%>
       </div>
 
       <div>
 	    <%= t.label :weight %><br>
-      <%= t.text_field :weight, class: 'form-control'%>
+      <%= t.text_field :weight%>
       </div>
 
       <div>
       <%= t.label :height %><br>
-      <%= t.text_field :height, class: 'form-control'%>
+      <%= t.text_field :height%>
       </div>
-
-      <p>The ability is measured by an integer between 0 and 100</p><br>
-      <div>
+  <p>The ability is measured by an integer between 0 and 100</p><br>
+      <div >
       <%= t.label :fly %><br>
-      <%= t.text_field :fly, class: 'form-control'%>
+      <%= t.text_field :fly%>
       </div>
 
       <div>
       <%= t.label :fight %><br>
-      <%= t.text_field :fight, class: 'form-control'%>
+      <%= t.text_field :fight%>
       </div>
 
       <div>
       <%= t.label :fire %><br>
-      <%= t.text_field :fire, class: 'form-control'%>
+      <%= t.text_field :fire%>
       </div>
 
       <div>
       <%= t.label :water %><br>
-      <%= t.text_field :water, class: 'form-control'%>
+      <%= t.text_field :water%>
       </div>
 
       <div>
       <%= t.label :electric %><br>
-      <%= t.text_field :electric, class: 'form-control'%>
+      <%= t.text_field :electric%>
       </div>
 
       <div>
       <%= t.label :ice %><br>
-      <%= t.text_field :ice, class: 'form-control'%>
+      <%= t.text_field :ice%>
       </div>
 
       <br>
@@ -61,7 +60,7 @@
       </select>
       <br>
       <br>
-      <%= t.submit "Create my tokimon", class: "btn btn-primary" %>
+      <%= t.submit "Create my tokimon"%>
     <% end %>
   </div>
 </div>
