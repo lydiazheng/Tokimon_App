@@ -20,7 +20,6 @@ class TokimonsController < ApplicationController
     #####
     @trainer = Trainer.find(@tokimon.trainer_id)
     #####
-
     if @tokimon.save
       @tokimon.total  = @tokimon.fire + @tokimon.fight + @tokimon.fly + @tokimon.water + @tokimon.electric + @tokimon.ice
       flash[:info] = "Create successfully! Congratulation"
