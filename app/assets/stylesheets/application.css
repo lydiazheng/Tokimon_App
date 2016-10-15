@@ -73,14 +73,15 @@ img.home{
 }
 
 @-webkit-keyframes mymove{
-	from{left: 0px;}
+	from{left: -500px;}
 	to{left: 450px;}
 }
 
 @keyframes mymove{
-	from{left: 0px;}
+	from{left: -500px;}
 	to{left: 450px;}
 }
+
 
 
 h1{
