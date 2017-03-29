@@ -16,12 +16,11 @@
 ###### -total: The sum of the abilities of the tokiomon
 
 ## 3.Bar chart
-###### -For displaying the data clearly, I add a bar chart for the trainer's level
-######                                  and add a bar chart for all tokimons' total ability
+###### -For displaying the data clearly, I add a bar chart for the trainer's level and add a bar chart for all tokimons' total abilities
 
 ## 4.Message prompt
 ###### -When you create, edit, or delete a trainer or tokimon, a message will pop up on the website.
-###### -If the value of the anility is out of the range (0,100), a error message will pop up.
+###### -If the value of the ability is out of the range (0,100), an error message will pop up.
 
 ## 5.Animation
 ###### -Home page has an animation with the link.
