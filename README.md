@@ -1,5 +1,8 @@
 #### README
 #### The link of  MI Mockup : https://github.com/lydiazheng/276_assign2/blob/master/cmpt276-A2%20UI%20Mockup.pdf
+####Introduction of the project
+######This project is about Tokimon!!! A Tokimon is a special creature living in Korea. Tokimons have different shapes and ######sizes. Also, they have special abilities including fly, fight, fire, spray water, electrify and freeze others. We use ######integer from 0 to 100 to measure their ability. Tokimon trainsers are a special group of people who can control and ######train their Tokimons. Their main job is to catch Tokimons and train them properly in order to increase their ######abilities. In this project, we are going to write an application to keep track of the Tokimons and their trainers.
+
 # Features:
 ## 1.Attributes for the trainers:
 ###### -age: You should enter the trainer's name, but the length is less than 50 characters 
