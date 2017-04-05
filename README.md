@@ -2,11 +2,6 @@
 
 [Click here for MI Mockup](https://github.com/lydiazheng/276_assign2/blob/master/cmpt276-A2%20UI%20Mockup.pdf).
 
-## Introduction
-This project is about Tokimon! A Tokimon is a special creature living in Korea. Tokimons have different shapes and sizes. Also, they have special abilities including flying, fighting, firing, spraying water, electrifying and freezing others. We use integer from 0 to 100 to measure their abilities. Tokimon trainers are a special group of people who can control and train their Tokimons. Their main job is to catch Tokimons and train them properly in order to increase their abilities. In this project, we are going to write an application to keep track of the Tokimons and their trainers.
-
-Databases: A database migration is created to collect information about a series of Tokimons. The attributes for the Tokimon are name, weight, height, fly, fight, fire, water, electric, frozen (or ice), and total (total is the sum of their abilities). Another database migration is created to collect information about trainers. The attributes for trainers are name and level (the level of a trainer is dependent on the number of Tokimons collected – every three gets a level up). Trainers can have more than one Tokimon but a Tokimon can only belong to one trainer.
-
 
 ## Features
 ### 1. Attributes for trainers:
