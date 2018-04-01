@@ -1,9 +1,18 @@
 # README
 
+## Introudction
+Tokimon is an online game for trainer to train their Tokimons and battle with other trainers.
+
+## UI mockup
 [Click here for MI Mockup](https://github.com/lydiazheng/276_assign2/blob/master/cmpt276-A2%20UI%20Mockup.pdf).
 
+## Contribution Guide
+This project uses Ruby and Rails framework. To start contributing, clone or fork the repo and start with command `rails server`
 
 ## Features
+
+**Explanation for basic features:**
+
 ### 1. Attributes for trainers:
 + Name: You should enter the trainer's name, but the length is less than 50 characters
 + Height: Measured in cm, with maximum 3 number limit 
@@ -27,4 +36,7 @@
 
 ### 5. Animation
 + Home page has an animation with the link.
-+ Lydia Zheng
+
+## Author
+Lydia Zheng
+
