@@ -1,6 +1,5 @@
 # Tokimon 
 
-## Introduction
 Tokimon is an online game in which players train their Tokimons and battle with other .
 
 ## UI mockup
